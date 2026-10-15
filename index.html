@@ -1,0 +1,1314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Joseph Kimani Kanyoro | IT Graduate & Digital Specialist</title>
+  <meta name="description" content="Joseph Kimani Kanyoro is a Kenyan IT graduate and quality-focused data and digital specialist with experience in web development, data review, documentation and software quality.">
+  <meta name="author" content="Joseph Kimani Kanyoro">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.josephkimanikanyoro.com/">
+
+  <meta property="og:title" content="Joseph Kimani Kanyoro | IT Graduate & Digital Specialist">
+  <meta property="og:description" content="Portfolio of Joseph Kimani Kanyoro — IT graduate, quality-focused data and digital specialist, and web developer.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.josephkimanikanyoro.com/">
+
+  <meta name="theme-color" content="#171817">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Joseph Kimani Kanyoro",
+    "url": "https://www.josephkimanikanyoro.com/",
+    "jobTitle": "IT Graduate and Quality-Focused Data & Digital Specialist",
+    "email": "mailto:kimanikanyoro4@gmail.com",
+    "sameAs": [
+      "https://github.com/kim-kanyoro"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "The Cooperative University of Kenya"
+    }
+  }
+  </script>
+
+  <style>
+    :root {
+      --paper: #f2efe7;
+      --paper-dark: #e5e1d7;
+      --ink: #171817;
+      --muted: #686a64;
+      --line: #c8c4ba;
+      --dark: #171817;
+      --dark-line: #42443f;
+      --white: #fffdf8;
+      --accent: #2457e6;
+      --accent-dark: #173db2;
+      --max: 1180px;
+      --ease: cubic-bezier(.2,.8,.2,1);
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--paper);
+      color: var(--ink);
+      font-family: "DM Sans", Arial, sans-serif;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a { color: inherit; text-decoration: none; }
+
+    button, input, textarea { font: inherit; }
+
+    ::selection {
+      background: var(--accent);
+      color: white;
+    }
+
+    .container {
+      width: min(calc(100% - 48px), var(--max));
+      margin-inline: auto;
+    }
+
+    .eyebrow {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--muted);
+      font-size: .72rem;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 34px;
+      height: 1px;
+      background: currentColor;
+    }
+
+    .display {
+      font-family: "Playfair Display", Georgia, serif;
+      font-weight: 600;
+      letter-spacing: -.045em;
+      line-height: .98;
+    }
+
+    /* NAV */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid rgba(23,24,23,.18);
+      background: rgba(242,239,231,.92);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-inner {
+      min-height: 76px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 800;
+      letter-spacing: -.03em;
+    }
+
+    .brand-mark {
+      width: 38px;
+      height: 38px;
+      border: 2px solid var(--ink);
+      display: grid;
+      place-items: center;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1rem;
+      transform: rotate(-4deg);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      font-size: .82rem;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      position: relative;
+      padding: 8px 0;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 3px;
+      width: 100%;
+      height: 2px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform .25s var(--ease);
+    }
+
+    .nav-links a:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+
+    .nav-cta {
+      border: 1px solid var(--ink);
+      padding: 10px 16px;
+      transition: .2s ease;
+    }
+
+    .nav-cta:hover {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    /* HERO */
+    .hero {
+      min-height: calc(100vh - 76px);
+      display: grid;
+      align-items: center;
+      padding: 90px 0 110px;
+      position: relative;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.25fr .75fr;
+      gap: 70px;
+      align-items: end;
+    }
+
+    .hero h1 {
+      max-width: 850px;
+      font-size: clamp(4rem, 9vw, 8.6rem);
+    }
+
+    .hero h1 .blue {
+      color: var(--accent);
+      font-style: italic;
+    }
+
+    .hero-lead {
+      max-width: 600px;
+      margin-top: 34px;
+      font-size: 1.1rem;
+      color: #444640;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 20px;
+      border: 1px solid var(--ink);
+      font-weight: 700;
+      font-size: .85rem;
+      transition: .2s ease;
+      cursor: pointer;
+      background: transparent;
+    }
+
+    .button:hover {
+      transform: translate(-3px,-3px);
+      box-shadow: 5px 5px 0 var(--ink);
+    }
+
+    .button.primary {
+      background: var(--ink);
+      color: var(--white);
+    }
+
+    .button.blue {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+
+    .hero-art {
+      position: relative;
+      min-height: 390px;
+      border-left: 1px solid var(--line);
+      padding-left: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .monogram {
+      width: 250px;
+      height: 250px;
+      border: 1px solid var(--ink);
+      position: relative;
+      display: grid;
+      place-items: center;
+      transform: rotate(7deg);
+    }
+
+    .monogram::before {
+      content: "";
+      position: absolute;
+      inset: 22px;
+      border: 1px solid var(--accent);
+      transform: rotate(-12deg);
+    }
+
+    .monogram span {
+      position: relative;
+      z-index: 1;
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 5.2rem;
+      letter-spacing: -.1em;
+    }
+
+    .hero-number {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      font-size: .72rem;
+      letter-spacing: .18em;
+      font-weight: 700;
+      writing-mode: vertical-rl;
+      color: var(--muted);
+    }
+
+    /* SECTIONS */
+    section { scroll-margin-top: 76px; }
+
+    .section {
+      padding: 110px 0;
+    }
+
+    .about {
+      background: var(--paper-dark);
+      border-block: 1px solid var(--line);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: .7fr 1.3fr;
+      gap: 90px;
+    }
+
+    .section-title {
+      font-size: clamp(2.8rem, 6vw, 5.8rem);
+    }
+
+    .about-copy {
+      font-size: 1.15rem;
+      max-width: 720px;
+    }
+
+    .about-copy p + p { margin-top: 22px; }
+
+    .about-details {
+      margin-top: 45px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-top: 1px solid var(--line);
+    }
+
+    .detail {
+      padding: 20px 20px 20px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .detail:nth-child(even) {
+      padding-left: 20px;
+      border-left: 1px solid var(--line);
+    }
+
+    .detail small {
+      display: block;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: .66rem;
+      font-weight: 700;
+      margin-bottom: 5px;
+    }
+
+    .detail strong { font-size: .9rem; }
+
+    /* SKILLS */
+    .skills-grid {
+      display: grid;
+      grid-template-columns: .7fr 1.3fr;
+      gap: 90px;
+    }
+
+    .skills-list {
+      border-top: 1px solid var(--ink);
+    }
+
+    .skill {
+      display: grid;
+      grid-template-columns: 55px 1fr;
+      gap: 20px;
+      align-items: center;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 1rem;
+      font-weight: 600;
+      transition: padding .25s var(--ease), background .25s ease;
+    }
+
+    .skill:hover {
+      padding-left: 12px;
+      background: rgba(255,255,255,.25);
+    }
+
+    .skill span {
+      color: var(--accent);
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.15rem;
+    }
+
+    /* EXPERIENCE */
+    .experience {
+      background: var(--dark);
+      color: var(--white);
+    }
+
+    .experience .eyebrow { color: #aaa99f; }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: .7fr 1.3fr;
+      gap: 90px;
+    }
+
+    .role {
+      border-top: 1px solid var(--dark-line);
+      padding: 30px 0 0;
+    }
+
+    .role-heading {
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      align-items: baseline;
+      margin-bottom: 28px;
+    }
+
+    .role h3 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 500;
+      letter-spacing: -.04em;
+    }
+
+    .role-date {
+      color: #aaa99f;
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      white-space: nowrap;
+    }
+
+    .role ul {
+      list-style: none;
+      max-width: 760px;
+    }
+
+    .role li {
+      border-bottom: 1px solid var(--dark-line);
+      padding: 16px 0;
+      color: #d0cec5;
+    }
+
+    .role li::before {
+      content: "→";
+      color: var(--accent);
+      margin-right: 14px;
+    }
+
+    /* PROJECTS */
+    .projects {
+      background: var(--accent);
+      color: white;
+    }
+
+    .projects .eyebrow { color: rgba(255,255,255,.72); }
+
+    .projects-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 30px;
+      margin-bottom: 60px;
+    }
+
+    .projects h2 {
+      font-size: clamp(3rem, 7vw, 6.7rem);
+    }
+
+    .project-admin-note {
+      max-width: 330px;
+      font-size: .82rem;
+      color: rgba(255,255,255,.78);
+      text-align: right;
+    }
+
+    #project-list {
+      border-top: 1px solid rgba(255,255,255,.45);
+    }
+
+    .project {
+      display: grid;
+      grid-template-columns: 90px 1fr 80px;
+      gap: 28px;
+      align-items: center;
+      padding: 32px 0;
+      border-bottom: 1px solid rgba(255,255,255,.45);
+      transition: padding .3s var(--ease), background .3s ease;
+    }
+
+    .project:hover {
+      padding-left: 20px;
+      padding-right: 20px;
+      background: rgba(0,0,0,.09);
+    }
+
+    .project-number {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 1.4rem;
+    }
+
+    .project h3 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(1.7rem, 3vw, 3rem);
+      font-weight: 500;
+      letter-spacing: -.035em;
+    }
+
+    .project p {
+      max-width: 720px;
+      margin-top: 7px;
+      color: rgba(255,255,255,.78);
+      font-size: .92rem;
+    }
+
+    .project-tech {
+      margin-top: 13px;
+      font-size: .68rem;
+      font-weight: 700;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      color: rgba(255,255,255,.68);
+    }
+
+    .project-link {
+      width: 52px;
+      height: 52px;
+      border: 1px solid rgba(255,255,255,.65);
+      display: grid;
+      place-items: center;
+      font-size: 1.2rem;
+      transition: .2s ease;
+    }
+
+    .project-link:hover {
+      background: white;
+      color: var(--accent);
+    }
+
+    /* EDUCATION */
+    .education-grid {
+      display: grid;
+      grid-template-columns: .7fr 1.3fr;
+      gap: 90px;
+    }
+
+    .education-card {
+      border-top: 2px solid var(--ink);
+      padding-top: 28px;
+    }
+
+    .education-card h3 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: clamp(2rem, 4vw, 3.5rem);
+      font-weight: 500;
+      line-height: 1.05;
+    }
+
+    .education-meta {
+      margin-top: 24px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      border-top: 1px solid var(--line);
+    }
+
+    .education-meta div {
+      padding: 18px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .education-meta div:nth-child(even) {
+      padding-left: 20px;
+      border-left: 1px solid var(--line);
+    }
+
+    .education-meta small {
+      display: block;
+      color: var(--muted);
+      text-transform: uppercase;
+      font-size: .65rem;
+      letter-spacing: .12em;
+      font-weight: 700;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: var(--paper-dark);
+      border-top: 1px solid var(--line);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 80px;
+      align-items: end;
+    }
+
+    .contact h2 {
+      font-size: clamp(3.5rem, 8vw, 8rem);
+      max-width: 900px;
+    }
+
+    .contact-copy {
+      color: var(--muted);
+      max-width: 390px;
+      margin-bottom: 28px;
+    }
+
+    .contact-links {
+      border-top: 1px solid var(--line);
+    }
+
+    .contact-link {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 17px 0;
+      border-bottom: 1px solid var(--line);
+      font-weight: 700;
+    }
+
+    .contact-link span:last-child { color: var(--accent); }
+
+    /* ADMIN */
+    .admin-section {
+      display: none;
+      background: #111;
+      color: white;
+      border-top: 1px solid #333;
+    }
+
+    .admin-section.visible { display: block; }
+
+    .admin-panel {
+      max-width: 760px;
+      margin: auto;
+    }
+
+    .admin-panel h2 {
+      font-family: "Playfair Display", Georgia, serif;
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    .admin-warning {
+      padding: 14px;
+      border: 1px solid #555;
+      color: #ccc;
+      margin: 20px 0 30px;
+      font-size: .85rem;
+    }
+
+    .admin-form {
+      display: grid;
+      gap: 14px;
+    }
+
+    .admin-form label {
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-weight: 700;
+      color: #aaa;
+    }
+
+    .admin-form input,
+    .admin-form textarea {
+      width: 100%;
+      padding: 13px;
+      background: #1d1d1d;
+      color: white;
+      border: 1px solid #444;
+      outline: none;
+    }
+
+    .admin-form input:focus,
+    .admin-form textarea:focus {
+      border-color: var(--accent);
+    }
+
+    .admin-form textarea {
+      min-height: 120px;
+      resize: vertical;
+    }
+
+    .admin-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 8px;
+    }
+
+    .admin-button {
+      border: 1px solid white;
+      background: transparent;
+      color: white;
+      padding: 11px 16px;
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .admin-button:hover {
+      background: white;
+      color: #111;
+    }
+
+    .admin-button.danger {
+      border-color: #d66;
+      color: #f88;
+    }
+
+    .admin-status {
+      min-height: 24px;
+      margin-top: 12px;
+      font-size: .82rem;
+      color: #aaa;
+    }
+
+    /* FOOTER */
+    footer {
+      background: var(--dark);
+      color: #aaa99f;
+      border-top: 1px solid var(--dark-line);
+    }
+
+    .footer-inner {
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      font-size: .75rem;
+    }
+
+    .footer-name { color: white; font-weight: 700; }
+
+    /* REVEAL */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity .7s var(--ease), transform .7s var(--ease);
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* MOBILE */
+    @media (max-width: 850px) {
+      .container { width: min(calc(100% - 32px), var(--max)); }
+
+      .nav-inner { min-height: 68px; }
+      .nav-links { display: none; }
+
+      .hero {
+        min-height: auto;
+        padding: 75px 0 80px;
+      }
+
+      .hero-grid,
+      .about-grid,
+      .skills-grid,
+      .experience-grid,
+      .education-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .hero h1 { font-size: clamp(3.6rem, 17vw, 6.5rem); }
+
+      .hero-art {
+        min-height: 290px;
+        border-left: 0;
+        border-top: 1px solid var(--line);
+        padding: 45px 0 0;
+      }
+
+      .monogram {
+        width: 190px;
+        height: 190px;
+      }
+
+      .monogram span { font-size: 4rem; }
+
+      .section { padding: 75px 0; }
+
+      .about-details,
+      .education-meta { grid-template-columns: 1fr; }
+
+      .detail:nth-child(even),
+      .education-meta div:nth-child(even) {
+        padding-left: 0;
+        border-left: 0;
+      }
+
+      .projects-head {
+        display: block;
+        margin-bottom: 35px;
+      }
+
+      .project-admin-note {
+        text-align: left;
+        margin-top: 20px;
+      }
+
+      .project {
+        grid-template-columns: 45px 1fr 45px;
+        gap: 12px;
+        padding: 24px 0;
+      }
+
+      .project p { font-size: .84rem; }
+
+      .project-link {
+        width: 40px;
+        height: 40px;
+      }
+
+      .role-heading {
+        display: block;
+      }
+
+      .role-date {
+        display: block;
+        margin-top: 8px;
+      }
+
+      .footer-inner {
+        min-height: 110px;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="#top" aria-label="Joseph Kimani Kanyoro home">
+        <span class="brand-mark">JK</span>
+        <span>Joseph Kimani Kanyoro</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">What I've built</a>
+        <a href="projects.html">Project page</a>
+        <a href="#education">Education</a>
+      </div>
+
+      <a class="nav-cta" href="start-project.html">Get a quote ↗</a>
+    </div>
+  </nav>
+
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <div class="eyebrow">Kenya / IT Graduate</div>
+          <h1 class="display">
+            Joseph<br>
+            <span class="blue">Kimani</span><br>
+            Kanyoro.
+          </h1>
+
+          <p class="hero-lead">
+            Quality-focused data & digital specialist with a foundation in
+            web development, structured data review, documentation and software quality.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">What I've built</a>
+            <a class="button" href="mailto:kimanikanyoro4@gmail.com">Email me</a>
+            <a class="button" href="https://github.com/kim-kanyoro" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+
+        <div class="hero-art reveal">
+          <div class="monogram" aria-hidden="true">
+            <span>JK</span>
+          </div>
+          <div class="hero-number">01 — DIGITAL / QUALITY / WEB</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="reveal">
+          <div class="eyebrow">01 / About</div>
+          <h2 class="display section-title">Built around<br>accuracy.</h2>
+        </div>
+
+        <div class="reveal">
+          <div class="about-copy">
+            <p>
+              I am an Information Technology graduate with a strong foundation
+              in structured, guideline-driven quality work and web application fundamentals.
+            </p>
+            <p>
+              My approach is detail-oriented and methodical: I review information
+              against defined standards, identify inconsistencies, document findings
+              clearly and use version control to keep work organized.
+            </p>
+            <p>
+              I am particularly interested in software quality, web development,
+              data-focused work and continuously learning new tools and systems.
+            </p>
+          </div>
+
+          <div class="about-details">
+            <div class="detail">
+              <small>Location</small>
+              <strong>Kikuyu, Kiambu County, Kenya</strong>
+            </div>
+            <div class="detail">
+              <small>Focus</small>
+              <strong>Quality · Data · Digital</strong>
+            </div>
+            <div class="detail">
+              <small>Education</small>
+              <strong>BSc Information Technology</strong>
+            </div>
+            <div class="detail">
+              <small>Languages</small>
+              <strong>English · Swahili</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+      <div class="container skills-grid">
+        <div class="reveal">
+          <div class="eyebrow">02 / Capabilities</div>
+          <h2 class="display section-title">What I<br>work with.</h2>
+        </div>
+
+        <div class="skills-list reveal">
+          <div class="skill"><span>01</span>Quality Review & Accuracy Checking</div>
+          <div class="skill"><span>02</span>Structured Specification Following</div>
+          <div class="skill"><span>03</span>Issue Identification & Documentation</div>
+          <div class="skill"><span>04</span>Analytical & Critical Thinking</div>
+          <div class="skill"><span>05</span>Test Data Preparation</div>
+          <div class="skill"><span>06</span>HTML · CSS · JavaScript · PHP</div>
+          <div class="skill"><span>07</span>MySQL / SQL</div>
+          <div class="skill"><span>08</span>Git & GitHub</div>
+          <div class="skill"><span>09</span>Documentation & Reporting</div>
+          <div class="skill"><span>10</span>Microsoft Office & Google Workspace</div>
+          <div class="skill"><span>11</span>Windows & Linux</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section class="section experience" id="experience">
+      <div class="container experience-grid">
+        <div class="reveal">
+          <div class="eyebrow">03 / Experience</div>
+          <h2 class="display section-title">Relevant<br>experience.</h2>
+        </div>
+
+        <div class="role reveal">
+          <div class="role-heading">
+            <h3>Freelance Digital Assistant</h3>
+            <span class="role-date">Freelance</span>
+          </div>
+
+          <ul>
+            <li>Reviewed and checked data and deliverables against detailed client specifications before submission.</li>
+            <li>Identified errors and inconsistencies and documented corrections and outcomes clearly.</li>
+            <li>Followed structured guidelines precisely across varied projects while maintaining consistency under deadline pressure.</li>
+            <li>Cross-checked information from multiple sources to verify accuracy before finalizing output.</li>
+            <li>Communicated issues and status updates clearly and professionally to clients.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="section projects" id="projects">
+      <div class="container">
+        <div class="projects-head reveal">
+          <div>
+            <div class="eyebrow">04 / Selected work</div>
+            <h2 class="display">Projects.</h2>
+          </div>
+
+          <p class="project-admin-note">
+            A growing portfolio of projects I have built and tested. Open the project page for more detail or start a conversation about a new idea.
+          </p>
+        </div>
+
+        <div id="project-list" class="reveal"></div>
+        <p style="margin-top:28px"><a class="button" href="projects.html" style="color:white;border-color:white">Open project page ↗</a></p>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section" id="education">
+      <div class="container education-grid">
+        <div class="reveal">
+          <div class="eyebrow">05 / Education</div>
+          <h2 class="display section-title">Academic<br>foundation.</h2>
+        </div>
+
+        <div class="education-card reveal">
+          <h3>BSc, Information Technology</h3>
+          <p style="margin-top:15px; color:var(--muted); font-size:1.05rem;">
+            The Cooperative University of Kenya
+          </p>
+
+          <div class="education-meta">
+            <div>
+              <small>Institution</small>
+              <strong>The Cooperative University of Kenya</strong>
+            </div>
+            <div>
+              <small>Period</small>
+              <strong>2021 — 2025</strong>
+            </div>
+            <div>
+              <small>Qualification</small>
+              <strong>Bachelor of Science</strong>
+            </div>
+            <div>
+              <small>Field</small>
+              <strong>Information Technology</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <div class="eyebrow">06 / Contact</div>
+          <h2 class="display">Let's build<br>something useful.</h2>
+        </div>
+
+        <div class="reveal">
+          <p class="contact-copy">
+            Have a website, data or digital project in mind? Tell me what you need and request a quote.
+          </p>
+          <p style="margin-bottom:18px"><a class="button primary" href="start-project.html">Start a project / Get a quote ↗</a></p>
+
+          <div class="contact-links">
+            <a class="contact-link" href="https://wa.me/254746909881" target="_blank" rel="noopener noreferrer">
+              <span style="display:flex;align-items:center;gap:12px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 11.5a8 8 0 0 1-11.8 7L4 20l1.5-4A8 8 0 1 1 20 11.5Z" stroke="currentColor" stroke-width="1.7"/><path d="M8.5 8.3c.3-.6.6-.6.9-.6h.4c.2 0 .4.1.5.4l.7 1.6c.1.2.1.4-.1.6l-.6.7c-.2.2-.2.4 0 .6.5.9 1.2 1.5 2.1 2 .2.1.4.1.6-.1l.8-.9c.2-.2.4-.2.6-.1l1.5.7c.3.1.4.3.4.5 0 .5-.3 1.1-.7 1.4-.5.4-1.1.6-1.8.5-1.2-.2-2.6-.9-3.8-2-1.2-1.1-2-2.5-2.1-3.5-.1-.7.2-1.3.6-1.8Z" fill="currentColor"/></svg>WhatsApp · 0746 909 881</span><span>↗</span>
+            </a>
+            <a class="contact-link" href="mailto:josekim216@gmail.com?subject=Project%20enquiry">
+              <span style="display:flex;align-items:center;gap:12px"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1.5" stroke="currentColor" stroke-width="1.7"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.7"/></svg>iMessage / Email · josekim216@gmail.com</span><span>↗</span>
+            </a>
+            <a class="contact-link" href="https://www.linkedin.com/in/joseph-kimani-012356246" target="_blank" rel="noopener noreferrer"><span style="display:flex;align-items:center;gap:12px"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.2 3.5a1.8 1.8 0 1 0 0 3.6 1.8 1.8 0 0 0 0-3.6ZM3.7 8.5h3v11.8h-3V8.5Zm5 0h2.9v1.6h.1a3.2 3.2 0 0 1 2.9-1.8c3.1 0 3.7 2 3.7 4.6v7.4h-3v-6.6c0-1.6 0-3-1.9-3s-2.2 1.4-2.2 2.9v6.7h-3V8.5Z"/></svg>LinkedIn · Joseph Kimani</span><span>↗</span></a>
+            <a class="contact-link" href="https://github.com/kim-kanyoro" target="_blank" rel="noopener noreferrer"><span>GitHub</span><span>↗</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--
+      ADMIN PROJECT MANAGER
+
+      IMPORTANT:
+      This is intentionally hidden from normal visitors.
+      Press Ctrl + Shift + A and enter your admin key to open it.
+
+      This version stores projects in this browser's localStorage.
+      It is NOT a secure server-side authentication system.
+      For a truly private online admin panel, connect this section
+      to a backend such as Supabase/Firebase with real authentication.
+    -->
+    <section class="section admin-section" id="admin">
+      <div class="container admin-panel">
+        <div class="eyebrow" style="color:#aaa;">Private area</div>
+        <h2>Add a project</h2>
+
+        <div class="admin-warning">
+          Browser-only project manager: additions made here are saved in this
+          browser. They will not automatically appear for other visitors or
+          survive if browser storage is cleared. Use a real authenticated
+          database when you are ready for permanent online project publishing.
+        </div>
+
+        <form class="admin-form" id="project-form">
+          <div>
+            <label for="project-title">Project title</label>
+            <input id="project-title" required placeholder="e.g. Social Media Sentiment Analysis System">
+          </div>
+
+          <div>
+            <label for="project-description">Description</label>
+            <textarea id="project-description" required placeholder="What did you build and what does it do?"></textarea>
+          </div>
+
+          <div>
+            <label for="project-tech">Technology / tools</label>
+            <input id="project-tech" placeholder="Python · Streamlit · SQLite">
+          </div>
+
+          <div>
+            <label for="project-url">Project URL</label>
+            <input id="project-url" type="url" placeholder="https://github.com/...">
+          </div>
+
+          <div>
+            <label for="project-image">Image URL (optional)</label>
+            <input id="project-image" type="url" placeholder="https://...">
+          </div>
+
+          <div class="admin-actions">
+            <button class="admin-button" type="submit">Publish project</button>
+            <button class="admin-button danger" type="button" id="clear-projects">Reset added projects</button>
+            <button class="admin-button" type="button" id="close-admin">Close</button>
+          </div>
+
+          <div class="admin-status" id="admin-status"></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span class="footer-name">Joseph Kimani Kanyoro</span>
+      <span>© <span id="year"></span> · IT Graduate · Kenya</span>
+    </div>
+  </footer>
+
+  <script>
+    /*
+      ============================================================
+      PROJECT SYSTEM
+      ============================================================
+      The initial projects below come from the current CV.
+      New projects are saved to localStorage on this browser.
+    */
+
+    const defaultProjects = [
+      {
+        title: "Social Media Sentiment Analysis System",
+        description: "Built and manually verified a Python/Streamlit application, checking data outputs against expected results to catch classification errors and validate accuracy before presenting results.",
+        tech: "Python · Streamlit · Data Analysis",
+        url: "",
+        image: ""
+      },
+      {
+        title: "Web Development Projects",
+        description: "Built and tested responsive websites using HTML, CSS, JavaScript, PHP, Laravel and MySQL, checking functionality across pages before delivery.",
+        tech: "HTML · CSS · JavaScript · PHP · Laravel · MySQL",
+        url: "https://github.com/kim-kanyoro",
+        image: ""
+      }
+    ];
+
+    const STORAGE_KEY = "joseph_kimani_projects_v1";
+
+    function getProjects() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        return saved ? JSON.parse(saved) : defaultProjects;
+      } catch {
+        return defaultProjects;
+      }
+    }
+
+    function saveProjects(projects) {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(projects));
+    }
+
+    function escapeHTML(value) {
+      return String(value || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+    }
+
+    function renderProjects() {
+      const list = document.getElementById("project-list");
+      const projects = getProjects();
+
+      list.innerHTML = projects.map((project, index) => {
+        const number = String(index + 1).padStart(2, "0");
+
+        const link = project.url
+          ? `<a class="project-link" href="${escapeHTML(project.url)}" target="_blank" rel="noopener noreferrer" aria-label="Open ${escapeHTML(project.title)}">↗</a>`
+          : `<span class="project-link" aria-hidden="true">↗</span>`;
+
+        return `
+          <article class="project">
+            <div class="project-number">${number}</div>
+            <div>
+              <h3>${escapeHTML(project.title)}</h3>
+              <p>${escapeHTML(project.description)}</p>
+              ${project.tech ? `<div class="project-tech">${escapeHTML(project.tech)}</div>` : ""}
+            </div>
+            ${link}
+          </article>
+        `;
+      }).join("");
+    }
+
+    renderProjects();
+
+    /*
+      ============================================================
+      PRIVATE ADMIN ACCESS
+      ============================================================
+      Change this key before publishing.
+
+      NOTE: Because this is client-side JavaScript, this is NOT
+      real security. Anyone who can inspect the source can find it.
+      It is only a convenience gate for the local project manager.
+    */
+    const ADMIN_KEY = "CHANGE-THIS-KEY";
+
+    function openAdmin() {
+      const key = prompt("Enter your project manager key:");
+
+      if (key === ADMIN_KEY) {
+        document.getElementById("admin").classList.add("visible");
+        document.getElementById("admin").scrollIntoView({ behavior: "smooth" });
+      } else if (key !== null) {
+        alert("Incorrect key.");
+      }
+    }
+
+    document.addEventListener("keydown", (event) => {
+      if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === "a") {
+        event.preventDefault();
+        openAdmin();
+      }
+    });
+
+    document.getElementById("close-admin").addEventListener("click", () => {
+      document.getElementById("admin").classList.remove("visible");
+    });
+
+    document.getElementById("project-form").addEventListener("submit", (event) => {
+      event.preventDefault();
+
+      const project = {
+        title: document.getElementById("project-title").value.trim(),
+        description: document.getElementById("project-description").value.trim(),
+        tech: document.getElementById("project-tech").value.trim(),
+        url: document.getElementById("project-url").value.trim(),
+        image: document.getElementById("project-image").value.trim()
+      };
+
+      const projects = getProjects();
+      projects.push(project);
+      saveProjects(projects);
+      renderProjects();
+
+      event.target.reset();
+
+      const status = document.getElementById("admin-status");
+      status.textContent = "Project added successfully in this browser.";
+      setTimeout(() => status.textContent = "", 3500);
+    });
+
+    document.getElementById("clear-projects").addEventListener("click", () => {
+      if (!confirm("Reset all added projects and return to the CV projects?")) return;
+
+      localStorage.removeItem(STORAGE_KEY);
+      renderProjects();
+
+      document.getElementById("admin-status").textContent =
+        "Added projects have been reset.";
+    });
+
+    /*
+      ============================================================
+      SCROLL REVEALS
+      ============================================================
+    */
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    document.querySelectorAll(".reveal").forEach(element => observer.observe(element));
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
